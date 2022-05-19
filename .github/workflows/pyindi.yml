@@ -21,7 +21,7 @@ jobs:
       - name: Get INDI Core Package
         uses: dawidd6/action-download-artifact@v2
         with:
-          repo: indilib/indi
+          repo: ${{ github.repository_owner }}/indi
           branch: master
           workflow: default.yml
           name: indi-core-package-${{ matrix.container }}
